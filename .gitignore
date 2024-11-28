@@ -9,3 +9,4 @@
 # key.pem
 *.pem
 terraform.*
+terraform.tfvars
