@@ -8,3 +8,4 @@
 .terraform.lock.hcl
 # key.pem
 *.pem
+terraform.*
