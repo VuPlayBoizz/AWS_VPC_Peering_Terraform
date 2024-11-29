@@ -8,10 +8,10 @@ resource "aws_subnet" "private_subnet" {
     vpc_id              = var.vpc_id
     cidr_block          = var.private_cidr_block
     availability_zone   = var.availability_zone
-    tags              = merge(var.tags, {Subnet_Type = "Private"})
+    tags                = merge(var.tags, {Subnet_Type = "Private"})
 }
 resource "aws_internet_gateway" "igw" {
-    vpc_id              = var.vpc_id
+    vpc_id = var.vpc_id
     tags   = merge(var.tags, {Name = "internet-gateway"})
 }
 resource "aws_route_table" "public_rtb" {
@@ -23,8 +23,8 @@ resource "aws_route_table" "public_rtb" {
     tags = merge(var.tags, {Name = "public-rtb"})
 }
 resource "aws_route_table" "private_rtb" {
-    vpc_id              = var.vpc_id
-    tags = merge(var.tags, {Name = "private-rtb"})
+    vpc_id  = var.vpc_id
+    tags    = merge(var.tags, {Name = "private-rtb"})
 }
 resource "aws_route_table_association" "public_rtb_association" {
     subnet_id           = aws_subnet.public_subnet.id
