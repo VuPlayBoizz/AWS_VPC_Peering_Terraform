@@ -27,20 +27,20 @@ Default output format [None]: json
    ```
 2. Nhập các giá trị của biến
    ```bash
-   environment =
-   owner =
-   region =
-   cidr_block =
-   enable_dns_hostnames =
-   enable_dns_support =
-   public_cidr_block =
-   private_cidr_block =
-   availability_zone =
-   MyIP =
-   myVPC =
-   key_name =
-   instance_type =
-   associate_public_ip_address = 
+   environment = string
+   owner = string
+   region = string
+   cidr_block = list(string)
+   enable_dns_hostnames = bool
+   enable_dns_support = bool
+   public_cidr_block = list(string)
+   private_cidr_block = list(string)
+   availability_zone = string
+   MyIP = string
+   myVPC = list(string)
+   key_name = list(string)
+   instance_type = string
+   associate_public_ip_address = list(bool)
    ```
 ## Bước 3: Khởi tạo Terraform
 
