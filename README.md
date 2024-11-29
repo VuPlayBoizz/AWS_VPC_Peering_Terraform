@@ -52,14 +52,14 @@ Default output format [None]: json
 
 ## Bước 4: Kiểm tra kế hoạch triển khai
 
-1. Chạy lệnh sau để kiểm tra kế hoạch triển khai Terraform với file biến `terraform-dev.tfvars`:
+1. Chạy lệnh sau để kiểm tra kế hoạch triển khai Terraform với file biến `terraform.tfvars`:
    ```bash
    terraform plan 
    ```
 
 ## Bước 5: Triển khai cơ sở hạ tầng
 
-1. Chạy lệnh sau để thực hiện triển khai với file biến `terraform-dev.tfvars`:
+1. Chạy lệnh sau để thực hiện triển khai với file biến `terraform.tfvars`:
    ```bash
    terraform apply 
    ```
